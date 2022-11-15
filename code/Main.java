@@ -4,6 +4,7 @@ class Main {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
+        //set name and select role
         System.out.println();
         System.out.println("<========================================================================================================>");
         System.out.println("Welcome to the Java Game!");
@@ -15,7 +16,6 @@ class Main {
         System.out.println("<========================================================================================================>");
         System.out.println("It is a pleasure to meet you " + name + "!");
         System.out.println();
-        System.out.println("<========================================================================================================>");
         System.out.println("We are going to set out on an adventure!");
         System.out.println("Before you are born, we would like to know what role you would like in this adventure:");
         System.out.println("Warrior, Archer, Healer, or Bard");
@@ -24,7 +24,8 @@ class Main {
 
         String role = sc.next();
         System.out.println();
-
+        
+        //role selector
         switch (role) {
             case "Warrior":
             Warrior warrior = new Warrior(name);

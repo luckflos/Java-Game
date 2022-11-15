@@ -16,7 +16,11 @@ class Warrior extends Methods {
     @Override
     public void hello() {
         System.out.println("<========================================================================================================>");
-        System.out.println("I am a warrior!");
+        System.out.println("Warrior Class Selected!");
+        System.out.println("Stats:");
+        System.out.println("Health = " + this.health);
+        System.out.println("Strength = " + this.strength);
+        System.out.println("Stamina = " + this.stamina);
         System.out.println("<========================================================================================================>");
     }
 }
