@@ -28,17 +28,29 @@ class Main {
         //role selector
         switch (role) {
             case "Warrior":
-            Warrior warrior = new Warrior(name);
-            warrior.hello();
+                Warrior warrior = new Warrior(name);
+                warrior.hello();
                 break;
             case "Archer":
+                Archer archer = new Archer(name);
+                archer.hello();
                 break;
             case "Healer":
+                Healer healer = new Healer(name);
+                healer.hello();
                 break;
             case "Bard":
+                Bard bard = new Bard(name);
+                bard.hello();
                 break;
+            default: 
+                
         }
         System.out.println();
+
+        System.out.println();
+
+
 
         
 
