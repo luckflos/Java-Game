@@ -6,7 +6,9 @@ class Warrior extends Methods {
     private int health;
     private int strength;
     private int stamina;
-    private String weapon;
+    private double weapon;
+    private double Shovel;
+    private double Rock;
 
     Scanner sc = new Scanner(System.in);
 
@@ -14,6 +16,8 @@ class Warrior extends Methods {
         health = 100;
         strength = 10;
         stamina = 20;
+        Shovel = .8;
+        Rock = .4;
 
 
 
@@ -46,9 +50,10 @@ class Warrior extends Methods {
         
         String option1 = sc.next();
 
+        //1st quest item
         switch (option1) {
             case "Investigate":
-                this.weapon = "Shovel";
+                this.weapon = Shovel;
                 System.out.println();
                 System.out.println("<========================================================================================================>");
                 System.out.println("You find nothing but a run down barn and wooden shed.  You find a shovel in the wooden shed");
@@ -57,20 +62,22 @@ class Warrior extends Methods {
                 System.out.println();
                 System.out.println("Do you Run or Fight?");
                 System.out.println("<========================================================================================================>");
-
-                System.out.println(this.weapon);
-
-                
+                System.out.println();
+                System.out.println("Your Combat Strength: " + (this.weapon * this.strength) * (this.stamina / 10));
+                System.out.println("Enemy Combat Strength: " + 20);
                 break;
+
             case "Explore":
-                this.weapon = "Rock";
+                this.weapon = Rock;
                 System.out.println();
                 System.out.println("<========================================================================================================>");
                 System.out.println("You see a bear roaring over an injured woman");
                 System.out.println("Do you Run or Fight?");
                 System.out.println("<========================================================================================================>");
+                System.out.println();
+                System.out.println("Your Combat Strength: " + (this.weapon * this.strength) * (this.stamina / 10));
+                System.out.println("Enemy Combat Strength: " + 20);
 
-                System.out.println(this.weapon);
                 break;
         }
    
