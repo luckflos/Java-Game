@@ -20,6 +20,18 @@ class Archer extends Methods {
         System.out.println("<========================================================================================================>");
     }
 
+    @Override
+    public void questMsg1() {
+
+        System.out.println("You awaken on a small farm, unfamiliar with how you got there (Wherever here is).");
+        System.out.println("The season is clearly summer and you hear the rush of a river nearby.");
+        System.out.println();
+
+
+    }
+
+    
+
 
 
 

@@ -30,10 +30,12 @@ class Main {
             case "Warrior":
                 Warrior warrior = new Warrior(name);
                 warrior.hello();
+                warrior.questMsg1();
                 break;
             case "Archer":
                 Archer archer = new Archer(name);
                 archer.hello();
+                archer.questMsg1();
                 break;
             case "Healer":
                 Healer healer = new Healer(name);
@@ -44,7 +46,7 @@ class Main {
                 bard.hello();
                 break;
             default: 
-                
+
         }
         System.out.println();
 
