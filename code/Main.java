@@ -8,9 +8,11 @@ class Main {
         System.out.println();
         System.out.println("<========================================================================================================>");
         System.out.println("Welcome to the Java Game!");
+        System.out.println();
        
         System.out.println("We are going to set out on an adventure!");
         System.out.println("Before you are born, we would like to know what role you would like in this adventure:");
+        System.out.println();
         System.out.println("Warrior, Archer, Healer, or Bard");
         System.out.println("<========================================================================================================>");
         System.out.println();

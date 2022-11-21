@@ -91,13 +91,18 @@ class Warrior implements Methods {
         }
         
         String option2 = sc.next();
+        
 
         switch (option2) {
             case "Fight":
+            
+                System.out.println();
                 this.health = this.health - 30;
                 System.out.println(this.health);
                 break;
             case "Run":
+
+                System.out.println();
                 this.stamina = this.stamina - 20;
                 System.out.println(this.stamina);
                 break;
