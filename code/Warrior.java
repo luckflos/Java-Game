@@ -75,7 +75,7 @@ class Warrior implements Methods {
             case "Explore":
                 this.weapon = Rock;
                 System.out.println();
-                System.out.println("<========================================================================================================>");
+                System.out.println("<========================================================================================================>"); 
                 System.out.println("You see a bear roaring over an injured woman");
                 System.out.println("You charge the bear before its too late!");
                 System.out.println("<========================================================================================================>");
