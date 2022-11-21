@@ -1,15 +1,20 @@
-class Archer extends Methods {
+import java.util.Scanner;
+
+class Archer implements Methods {
     private int health;
     private int strength;
     private int stamina;
-    public Archer (String name) {
+
+    private String name;
+
+    Scanner sc = new Scanner(System.in);
+    public Archer () {
         health = 60;
         strength = 6;
         stamina = 40;
 
     }
 
-    @Override
     public void hello() {
         System.out.println("<========================================================================================================>");
         System.out.println("Archer Class Selected!");
@@ -20,7 +25,7 @@ class Archer extends Methods {
         System.out.println("<========================================================================================================>");
     }
 
-    @Override
+    
     public void questMsg1() {
 
         System.out.println("You awaken on a small farm, unfamiliar with how you got there (Wherever here is).");
@@ -29,6 +34,15 @@ class Archer extends Methods {
 
 
     }
+    
+    public String getName() {
+        return name;
+    }
+
+    public void setName() {
+        System.out.println("What is your name? ");
+        name = sc.next();
+    }
 
     
 
@@ -36,5 +50,5 @@ class Archer extends Methods {
 
 
 
-    }
+}
 

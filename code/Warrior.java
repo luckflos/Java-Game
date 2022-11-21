@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 
-class Warrior extends Methods {
+class Warrior implements Methods {
     
     private int health;
     private int strength;
@@ -9,10 +9,11 @@ class Warrior extends Methods {
     private double weapon;
     private double Shovel;
     private double Rock;
+    private String name;
 
     Scanner sc = new Scanner(System.in);
 
-    public Warrior (String name) {
+    public Warrior () {
         health = 100;
         strength = 10;
         stamina = 20;
@@ -25,7 +26,7 @@ class Warrior extends Methods {
 
     }
 
-    @Override
+    
     public void hello() {
         System.out.println("<========================================================================================================>");
         System.out.println("Warrior Class Selected!");
@@ -37,7 +38,7 @@ class Warrior extends Methods {
         System.out.println("<========================================================================================================>");
     }
 
-    @Override
+    
     public void questMsg1() {
         
         System.out.println("<========================================================================================================>");
@@ -60,11 +61,15 @@ class Warrior extends Methods {
                 System.out.println("You hear a scream in the distance!  You run across the pasture with shovel in hand");
                 System.out.println("You see a bear roaring over an injured woman");
                 System.out.println();
-                System.out.println("Do you Run or Fight?");
+                System.out.println("You charge the bear before its too late!");
                 System.out.println("<========================================================================================================>");
                 System.out.println();
                 System.out.println("Your Combat Strength: " + (this.weapon * this.strength) * (this.stamina / 10));
                 System.out.println("Enemy Combat Strength: " + 20);
+                System.out.println();
+                System.out.println("Type 'Run' if you would like to attempt to stun the bear with your weapon and flee with the woman");
+                System.out.println("Type 'Fight' if you would like to attempt to fight the bear for glory and it's pelt");
+                
                 break;
 
             case "Explore":
@@ -72,16 +77,50 @@ class Warrior extends Methods {
                 System.out.println();
                 System.out.println("<========================================================================================================>");
                 System.out.println("You see a bear roaring over an injured woman");
-                System.out.println("Do you Run or Fight?");
+                System.out.println("You charge the bear before its too late!");
                 System.out.println("<========================================================================================================>");
                 System.out.println();
                 System.out.println("Your Combat Strength: " + (this.weapon * this.strength) * (this.stamina / 10));
                 System.out.println("Enemy Combat Strength: " + 20);
+                System.out.println();
+                System.out.println("Type 'Run' if you would like to attempt to stun the bear with your weapon and flee with the woman");
+                System.out.println("Type 'Fight' if you would like to attempt to fight the bear for glory and it's pelt");
+                System.out.println();
 
+                break;
+        }
+        
+        String option2 = sc.next();
+
+        switch (option2) {
+            case "Fight":
+                this.health = this.health - 30;
+                System.out.println(this.health);
+                break;
+            case "Run":
+                this.stamina = this.stamina - 20;
+                System.out.println(this.stamina);
                 break;
         }
    
 
+    }
+
+    public int getHealth() {
+        return health;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName() {
+        System.out.println("What is your name? ");
+        name = sc.next();
     }
 
     

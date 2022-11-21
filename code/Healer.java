@@ -1,8 +1,14 @@
-class Healer extends Methods{
+import java.util.Scanner;
+
+class Healer implements Methods{
     private int health;
     private int strength;
     private int stamina;
-    public Healer (String name) {
+    private String name;
+
+    Scanner sc = new Scanner(System.in);
+
+    public Healer () {
         health = 40;
         strength = 4;
         stamina = 25;
@@ -10,7 +16,6 @@ class Healer extends Methods{
 
     }
 
-    @Override
     public void hello() {
         System.out.println("<========================================================================================================>");
         System.out.println("Healer Class Selected!");
@@ -21,7 +26,7 @@ class Healer extends Methods{
         System.out.println("<========================================================================================================>");
     }
 
-    @Override
+    
     public void questMsg1() {
 
         System.out.println("You awaken on a small farm, unfamiliar with how you got there (Wherever here is).");
@@ -29,6 +34,15 @@ class Healer extends Methods{
         System.out.println();
         
 
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName() {
+        System.out.println("What is your name? ");
+        name = sc.next();
     }
 
     
