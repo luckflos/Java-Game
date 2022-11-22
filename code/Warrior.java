@@ -54,7 +54,7 @@ class Warrior extends Weapon implements Methods {
                 System.out.println("<========================================================================================================>");
                 System.out.println("You find nothing but a run down barn and wooden shed.  You find a shovel in the wooden shed");
                 System.out.println("You hear a scream in the distance!  You run across the pasture with shovel in hand");
-                System.out.println("You see a bear roaring over an injured woman");
+                System.out.println("You see a bear roaring over an injured woman beside a river");
                 System.out.println();
                 System.out.println("You charge the bear before its too late!");
                 System.out.println("<========================================================================================================>");
@@ -64,7 +64,8 @@ class Warrior extends Weapon implements Methods {
                 System.out.println();
                 System.out.println("Type 'Run' if you would like to attempt to stun the bear with your weapon and flee with the woman");
                 System.out.println("Type 'Fight' if you would like to attempt to fight the bear for glory and it's pelt");
-                
+                System.out.println();
+
                 break;
 
             case "Explore":
