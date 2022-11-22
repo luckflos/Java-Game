@@ -6,9 +6,6 @@ class Warrior extends Weapon implements Methods {
     private int health;
     private int strength;
     private int stamina;
-    private double weapon;
-    private double Shovel;
-    private double Rock;
     private String name;
 
     Scanner sc = new Scanner(System.in);
@@ -17,8 +14,6 @@ class Warrior extends Weapon implements Methods {
         health = 100;
         strength = 10;
         stamina = 20;
-        Shovel = .8;
-        Rock = .4;
 
 
 
@@ -54,7 +49,7 @@ class Warrior extends Weapon implements Methods {
         //1st quest item
         switch (option1) {
             case "Investigate":
-                this.weapon = Shovel;
+                this.weapon = shovel;
                 System.out.println();
                 System.out.println("<========================================================================================================>");
                 System.out.println("You find nothing but a run down barn and wooden shed.  You find a shovel in the wooden shed");
@@ -73,7 +68,7 @@ class Warrior extends Weapon implements Methods {
                 break;
 
             case "Explore":
-                this.weapon = Rock;
+                this.weapon = rock;
                 System.out.println();
                 System.out.println("<========================================================================================================>"); 
                 System.out.println("You see a bear roaring over an injured woman");
