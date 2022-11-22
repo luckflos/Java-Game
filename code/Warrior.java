@@ -99,7 +99,9 @@ class Warrior extends Weapon implements Methods {
 
                 System.out.println();
                 this.stamina = this.stamina - 20;
-                System.out.println(this.stamina);
+                System.out.println("- 20 stamina");
+                System.out.println();
+                System.out.println("Current Stamina: " + this.stamina);
                 break;
         }
    
@@ -121,6 +123,20 @@ class Warrior extends Weapon implements Methods {
     public void setName() {
         System.out.println("What is your name? ");
         name = sc.next();
+    }
+
+    @Override
+    public void passOut() {
+        if (this.stamina <= 0) {
+            System.out.println();
+            System.out.println("You're exhaustion takes hold of you, you pass out.");
+            this.stamina = this.stamina + 20;
+            System.out.println();
+            System.out.println("Restored 20 stamina");
+            
+        }else {
+            System.out.println();
+        }
     }
 
     

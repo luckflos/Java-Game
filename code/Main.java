@@ -27,6 +27,7 @@ class Main {
                 warrior.setName();
                 warrior.hello();
                 warrior.questMsg1();
+                warrior.passOut();
                 break;
             case "Archer":
                 Archer archer = new Archer();
@@ -49,6 +50,7 @@ class Main {
             default: 
 
         }
+
         System.out.println();
 
         System.out.println();

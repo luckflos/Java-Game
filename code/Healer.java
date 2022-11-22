@@ -45,6 +45,14 @@ class Healer extends Weapon implements Methods{
         name = sc.next();
     }
 
+    @Override
+    public void passOut() {
+        System.out.println("You pass out!");
+        this.stamina = this.stamina + 20;
+        System.out.println("You recover 20 stamina!");
+        System.out.println("Current Stamina : " + this.stamina);
+    }
+
     
 }
 
