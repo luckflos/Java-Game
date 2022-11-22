@@ -46,10 +46,16 @@ class Archer extends Weapon implements Methods {
 
     @Override
     public void passOut() {
-        System.out.println("You pass out!");
-        this.stamina = this.stamina + 20;
-        System.out.println("You recover 20 stamina!");
-        System.out.println("Current Stamina : " + this.stamina);
+        if (this.stamina <= 0) {
+            System.out.println();
+            System.out.println("You're exhaustion takes hold of you, you pass out.");
+            this.stamina = this.stamina + 20;
+            System.out.println();
+            System.out.println("Restored 20 stamina");
+            
+        }else {
+            System.out.println();
+        }
     }
 
     

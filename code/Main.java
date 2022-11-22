@@ -34,18 +34,21 @@ class Main {
                 archer.setName();
                 archer.hello();
                 archer.questMsg1();
+                archer.passOut();
                 break;
             case "Healer":
                 Healer healer = new Healer();
                 healer.setName();
                 healer.hello();
                 healer.questMsg1();
+                healer.passOut();
                 break;
             case "Bard":
                 Bard bard = new Bard();
                 bard.setName();
                 bard.hello();
                 bard.questMsg1();
+                bard.passOut();
                 break;
             default: 
 
