@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 
-class Warrior implements Methods {
+class Warrior extends Weapon implements Methods {
     
     private int health;
     private int strength;

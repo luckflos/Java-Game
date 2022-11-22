@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Bard implements Methods {
+class Bard extends Weapon implements Methods {
 
     private int health;
     private int strength;

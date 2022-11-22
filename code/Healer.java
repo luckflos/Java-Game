@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Healer implements Methods{
+class Healer extends Weapon implements Methods{
     private int health;
     private int strength;
     private int stamina;

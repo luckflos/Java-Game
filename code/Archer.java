@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Archer implements Methods {
+class Archer extends Weapon implements Methods {
     private int health;
     private int strength;
     private int stamina;
@@ -34,7 +34,7 @@ class Archer implements Methods {
 
 
     }
-    
+
     public String getName() {
         return name;
     }
